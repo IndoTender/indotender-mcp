@@ -2,12 +2,13 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.indotender/indotender",
   "title": "IndoTender",
-  "description": "Indonesian government procurement data. Search LPSE tenders, procurement realisasi, company profiles, treasury payments (SP2D), and government agency directories.",
+  "description": "Indonesian government procurement — LPSE tenders, Inaproc realisasi, SP2D payments, and company profiles.",
   "version": "1.0.0",
   "repository": {
     "url": "https://github.com/IndoTender/indotender-mcp",
     "source": "github"
   },
+  "websiteUrl": "https://indotender.com/mcp/connect",
   "remotes": [
     {
       "type": "streamable-http",
