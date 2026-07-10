@@ -2,7 +2,7 @@
 
 Connect your AI assistant to [IndoTender](https://indotender.com) — Indonesian government procurement data via the Model Context Protocol.
 
-Search LPSE tenders, procurement realisasi, company profiles, treasury payments, and government agency directories — all from your AI chat.
+Search LPSE tenders, procurement realisasi, BPS trade statistics, company profiles, treasury payments, and government agency directories — all from your AI chat.
 
 ## Connect
 
@@ -38,6 +38,16 @@ Add this URL as a custom MCP connector in Claude, Cursor, or any MCP-compatible 
 | `Inaproc_top_vendors` | Rank vendors by total contract value won from an agency or work unit |
 | `Inaproc_search_pembayaran` | Search SP2D treasury payment records from SAKTI |
 
+### BPS — Trade statistics
+
+Official Indonesian import/export aggregates from [BPS dataexim](https://www.bps.go.id/). Values in IDR; net weight in kg.
+
+| Tool | Description |
+|---|---|
+| `Bps_search_hs_codes` | Search HS code reference — filter by code prefix (2/4/6/8 digits) and/or product name keyword |
+| `Bps_search_trade` | Paginated trade lines — filter by year, month, flow (export/import), HS code, partner country, port of discharge |
+| `Bps_aggregate_trade` | Aggregate trade by dimensions (country, year, HS code, etc.) — e.g. top export partners for a commodity |
+
 ### Company Registry
 
 | Tool | Description |
@@ -53,6 +63,9 @@ Add this URL as a custom MCP connector in Claude, Cursor, or any MCP-compatible 
 - *"What tenders has PT Waskita Karya won recently?"*
 - *"Show me SP2D payments from the Ministry of Finance in Q1 2024"*
 - *"Find all government agencies (instansi) related to education"*
+- *"Which countries import rice from Indonesia in 2024?"*
+- *"Aggregate Indonesian coffee exports by destination country for 2024"*
+- *"Search BPS HS codes for palm oil"*
 
 ## Setup — Claude
 
